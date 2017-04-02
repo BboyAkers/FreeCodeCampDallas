@@ -14,7 +14,7 @@ xhr.onreadystatechange = function() {
 		document.getElementById('ajax').innerHTML = JSON.stringify(data, null, 4);
 	}
 };
-xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?zip=75093&appid=b0cc9ed54981357f6dd3594db340516e');
+xhr.open('GET', 'http://api.openweathermap.org/data/2.5/weather?zip=75093&appid={{API_KEY}}');
 xhr.send();
 
 console.log(xhr);
